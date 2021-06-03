@@ -2,15 +2,20 @@ package me.shj.javaspring.service;
 
 import me.shj.javaspring.domain.Member;
 import me.shj.javaspring.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 
 //서비스 제공할 것 구현
+//@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
+
+//    @Autowired //다음 필요한 repository 연결해줌
     public MemberService (MemberRepository memberRepository){
         this.memberRepository = memberRepository; // 생성자 : memberRepository를 인스턴스 필드로
     }

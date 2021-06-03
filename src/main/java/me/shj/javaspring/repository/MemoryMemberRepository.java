@@ -1,10 +1,12 @@
 package me.shj.javaspring.repository;
 
 import me.shj.javaspring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 //interface에 있는 모든 매소드 override
+//@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     //주인공 : store, 정체는 map!
