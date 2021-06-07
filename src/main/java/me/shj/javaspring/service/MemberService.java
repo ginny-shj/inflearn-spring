@@ -4,6 +4,7 @@ import me.shj.javaspring.domain.Member;
 import me.shj.javaspring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +12,7 @@ import java.util.Optional;
 
 //서비스 제공할 것 구현
 //@Service
+@Transactional //jpa때문에 설
 public class MemberService {
 
     private final MemberRepository memberRepository;

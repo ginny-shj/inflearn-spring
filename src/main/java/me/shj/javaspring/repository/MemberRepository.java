@@ -1,6 +1,7 @@
 package me.shj.javaspring.repository;
 
 import me.shj.javaspring.domain.Member;
+import org.springframework.jdbc.core.RowMapper;
 
 import java.util.List;
 import java.util.Optional;

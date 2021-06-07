@@ -1,5 +1,6 @@
 package me.shj.javaspring.repository;
 import me.shj.javaspring.domain.Member;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 import javax.sql.DataSource;
 import java.sql.*;

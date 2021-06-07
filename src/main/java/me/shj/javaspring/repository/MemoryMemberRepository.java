@@ -1,7 +1,7 @@
 package me.shj.javaspring.repository;
 
 import me.shj.javaspring.domain.Member;
-import org.springframework.stereotype.Repository;
+import org.springframework.jdbc.core.RowMapper;
 
 import java.util.*;
 
@@ -38,6 +38,7 @@ public class MemoryMemberRepository implements MemberRepository{
 
     @Override
     public List<Member> findAll() {
+//        return (RowMapper<Member>) new ArrayList<Member>(store.values());
         return new ArrayList<>(store.values());
     }
 
